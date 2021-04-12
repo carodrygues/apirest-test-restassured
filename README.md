@@ -1,6 +1,6 @@
 # Consuming REST API with Spring Boot and Testing with REST Assured
 
-1. Project Calculator
+1. Project - Calculator
   - run:
   `mvn spring-boot:run`
   - Send a GET request
@@ -10,6 +10,6 @@
   
   See accepted math operations -> [Newton Math - API](https://github.com/aunyks/newton-api).
 
- 2. Project Rest-assured
+ 2. Project - Rest-assured
  - test:
   `mvn test`
