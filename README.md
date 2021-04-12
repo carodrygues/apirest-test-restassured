@@ -4,7 +4,7 @@
   - run:
   `mvn spring-boot:run`
   - Send a GET request
-  `http://localhost:8080/:operation/:expression`
+  `http://localhost:8080/calculate/:operation/:expression`
   
   Note: `:operation` is the math operation that you want to perform. `:expression` is the url-encoded math expression on which you want to operate.
   
