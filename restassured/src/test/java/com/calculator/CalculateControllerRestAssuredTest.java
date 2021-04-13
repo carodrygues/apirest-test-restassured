@@ -14,7 +14,7 @@ public class CalculateControllerRestAssuredTest {
     @BeforeAll
     public static void setBaseURI() {
         RestAssured.baseURI = "http://localhost:8080";
-        get("/calculate/log/2|2").then().statusCode(200);
+        get("/calculate").then().statusCode(200);
     }
 
     @Test
