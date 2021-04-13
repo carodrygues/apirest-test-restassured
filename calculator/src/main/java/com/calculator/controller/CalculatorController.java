@@ -25,7 +25,13 @@ public class CalculatorController {
 
         Calculator calculator = restTemplate.getForObject(uri, Calculator.class, params);
 
-        return new ResponseEntity<Calculator>(calculator, HttpStatus.OK);
+        try {
+            return new ResponseEntity<Calculator>(calculator, HttpStatus.OK);
+        } catch (Exception e) {
+            e.getMessage();
+        }
+
+        return new ResponseEntity<Calculator>(calculator, HttpStatus.BAD_REQUEST);
     }
 
     @RequestMapping("/calculate")
