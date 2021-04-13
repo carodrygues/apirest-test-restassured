@@ -24,8 +24,8 @@ public class CalculateControllerRestAssuredTest {
     }
 
     @Test
-    public void testCalculateOperationDeriveWithNegativeNumberFailure() {
-        String result = get("/calculate/derive/x^-2").then().assertThat().statusCode(500).extract().path("result");
-        assertEquals(null, result);
+    public void testCalculateOperationLogarithmWithNegativeNumberFailure() {
+        String result = get("/calculate/log/2l-8").then().assertThat().statusCode(200).extract().path("result");
+        assertEquals("NaN", result);
     }
 }
