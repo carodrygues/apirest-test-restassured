@@ -27,5 +27,11 @@ public class CalculatorController {
 
         return new ResponseEntity<Calculator>(calculator, HttpStatus.OK);
     }
+
+    @RequestMapping("/calculate")
+	@ResponseBody
+	public String resultExpression() {
+		return "Calculator Math Operations ";
+	}
 }
 
