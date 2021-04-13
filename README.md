@@ -1,6 +1,6 @@
 # Consuming REST API with Spring Boot and Testing with REST Assured
 
-Java Version -  `15.0`
+Java Version -  `15`
 
 1. Project - Calculator
   - run:
