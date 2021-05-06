@@ -29,7 +29,7 @@ public class CalculateControllerRestAssuredTest {
     }
 
     @Test
-    public void testInvalidCharacterFailure() {
+    public void testWithoutMathExpressionFailure() {
         get("/calculate/derive/").then().statusCode(404);
     }
 }
